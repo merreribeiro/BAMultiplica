@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Barra de navegación y título */
+.navbar-brand {
+    color: #742f37;
+    font-weight: bold;
+    float: left;
+}
+
+.navbar-brand:hover {
+    font-size: 40px;
+    transition-duration: 1s;
+}
+
+/* Sección "nuestra historia" */
+#historia p {
+    text-indent: 2px;
+    padding: 40px 300px;
+    font-size: 25px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+    background-color: #742f37;
+    color: white;
+}
+
+/* Imagen de bodega con Fade in */
+img {
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Formulario de contacto */
+form {
+    color: black;
+    align-items: center;
+    background-color: white;
+    text-decoration: solid;
+    box-sizing: 50%;
+    justify-content: center;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+label {
+    padding: 15px;
+}
+
+#Comentario {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box 2px;
+}
+
+/* Botón enviar (formulario) */
+#Enviar {
+    background-color: #742f37;
+    border: none;
+    border-style: hidden;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    margin: 8px 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#Enviar:hover {
+    background-color: black;
+}
+
+footer {
+    width: 100%;
+    background-color: #742f37;
+    text-align: center;
+    color: #E5E5DB;
+}
+
+/* Responsive design para la sección "Nuestra Historia" */
+@media (max-width: 320px) {
+    #historia p {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive design para el formulario de visita (uno encima del otro) */
+@media (max-width: 320px) {
+
+    #Nombre,
+    #Email,
+    #Comentario {
+        width: 75%;
+        margin: 10px;
+    }
+
+    input[type=submit] {
+        width: 75%;
+    }
+}
